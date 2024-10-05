@@ -1,7 +1,7 @@
 import logo from "../Media/Logo_Main.jpg";    
 
 const changeColor = () =>{
-    console.log("clicked");;
+    console.log("clicked");
 }
 
 const Logo = (props) =>{
