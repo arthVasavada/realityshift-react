@@ -1,9 +1,17 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 
-export default function Contact() {
+
+function Contact() {
   return (
-    <div>
-      <h1>This is the Contact Page</h1>
-    </div>
+    
+    <motion.div initial={{opacity:0, transition:{duration:0.5}}} animate={{opacity:1, transition:{duration:0.5}}} exit={{opacity:0, transition:{duration:0.5}}}>
+      <h1>This is Contact Page</h1>
+    </motion.div>
+    
   )
 }
+
+
+export default Contact;
+
