@@ -1,28 +1,26 @@
-import React from 'react'
-import { useLocation, Route, Routes} from 'react-router-dom'
-import Home from "./Home"
-import About from "./About"
-import Logo from "./Logo"
-import Contact from "./Contact"
+import React from "react";
+import { useLocation, Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+import Logo from "./Logo";
+import Contact from "./Contact";
 
-
-import {AnimatePresence} from 'framer-motion';
+import { AnimatePresence } from "framer-motion";
 
 function AnimatedRoutes() {
-   
-    const location = useLocation
+  const location = useLocation;
   return (
     <div>
-        <AnimatePresence>
+      <AnimatePresence>
         <Routes>
-            <Route path="/" element={<Logo className="App-logo"/>}></Route>
-            <Route path="/home" element={<Home />}></Route>
-            <Route path="/about" element={<About />}></Route>
-            <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/" element={<Logo className="App-logo" />}></Route>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
         </Routes>
-        </AnimatePresence>
+      </AnimatePresence>
     </div>
-  )
+  );
 }
 
-export default AnimatedRoutes
+export default AnimatedRoutes;
