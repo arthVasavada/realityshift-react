@@ -11,11 +11,10 @@ function App() {
     <div className="App">
       <header className="App-header"> 
       <Navbar />
-      
-    </header>
+      </header>
     <main className='App-main'>
       <AnimatedRoutes/>
-      </main>  
+    </main>  
       
     </div>
   );

@@ -9,16 +9,13 @@ import Contact from "./Contact"
 import {AnimatePresence} from 'framer-motion';
 
 function AnimatedRoutes() {
-    function bringMeHome(){
-        console.log("Clicked");
-      }
-
+   
     const location = useLocation
   return (
     <div>
         <AnimatePresence>
         <Routes>
-            <Route path="/" element={<Logo className="App-logo" onClick={bringMeHome}/>}></Route>
+            <Route path="/" element={<Logo className="App-logo"/>}></Route>
             <Route path="/home" element={<Home />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/contact" element={<Contact />}></Route>

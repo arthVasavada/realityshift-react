@@ -12,7 +12,6 @@ function Navbar() {
       <Link to="/home" element="">Home</Link>
       <Link to="/about" element="">About</Link>
       <Link to="/contact" element="">Contact</Link>
-      
     </nav>
     </motion.div>
     
@@ -20,4 +19,4 @@ function Navbar() {
 }
 
 
-export default Navbar
+export default Navbar;
